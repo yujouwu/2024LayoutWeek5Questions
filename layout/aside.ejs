@@ -1,0 +1,42 @@
+<aside class="aside navbar navbar-expand-lg bg-body-tertiary vh-100 position-fixed top-0 py-8">
+  <div class="container-fluid flex-column align-items-start px-0 h-100">
+    <nav class="nav">
+      <h1 class="fs-6 ps-8 mb-8"><a href="index.html"><img class="img-fluid" src="../assets/images/logo-ANSWER.svg" alt="answer website"></a></h1>
+      <ul class="navbar-nav flex-column gap-3 w-100">
+        <li class="nav-item position-relative <%= page === 'dashboard' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold" aria-current="page" href="#"><span class="material-symbols-outlined me-3">
+            analytics</span>Dashboard</a>
+        </li>
+        <li class="nav-item position-relative <%= page === 'question' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold" aria-current="page" href="#"><span class="material-symbols-outlined me-3">
+            forum</span>Question</a>
+        </li>
+        <li class="nav-item position-relative <%= page === 'assignment' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold" aria-current="page" href="index.html"><span class="material-symbols-outlined me-3">
+            assignment</span>Assignment</a>
+        </li>
+        <li class="nav-item position-relative <%= page === 'course' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold" aria-current="page" href="#"><span class="material-symbols-outlined me-3">
+            video_library</span>Course</a>
+        </li>
+        <li class="nav-item position-relative <%= page === 'admin' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold " aria-current="page" href="admin.html"><span class="material-symbols-outlined me-3">
+            group</span>Admin</a>
+        </li>
+        <li class="nav-item position-relative <%= page === 'settings' ? 'active' : '' %>">
+          <a class="nav-link py-1 ps-8 fw-bold" aria-current="page" href="#"><span class="material-symbols-outlined me-3">
+            settings</span>Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="d-flex align-items-center ms-8 position-relative">
+      <div class="flex-shrink-0">
+        <img class="rounded-circle object-fit-cover" src="../assets/images/andychen.jpeg" alt="Andy Chen image" width="40px" height="40px">
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <p class="fw-bold">Andy Chen</p>
+        <a class="text-secondary stretched-link" href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+      </div>
+    </div>
+  </div>
+</aside>

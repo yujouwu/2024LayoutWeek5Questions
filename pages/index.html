@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANSWER - Assignment</title>
+</head>
+
+<body>
+  <div class="d-flex">
+    <%- include('./layout/aside', {page: 'assignment' }); -%>
+      <main class="main p-8">
+        <header class="d-flex align-items-center justify-content-between mb-8">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-0">
+              <h2 class="navbar-brand fw-bold fs-4">Assignment</h2>
+              <!-- <ul class="navbar-nav">
+                <li class="nav-item dropdown"> -->
+              <div class="dropdown">
+                <button class="btn border-0 fw-bold text-dark link-success" data-bs-toggle="dropdown" aria-expanded="false">
+                  All courses<span class="material-symbols-outlined text-success ms-2">keyboard_arrow_down</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Course 1</a></li>
+                  <li><a class="dropdown-item" href="#">Course 2</a></li>
+                  <li><a class="dropdown-item" href="#">Course 3</a></li>
+                </ul>
+              </div>
+              <!-- </li>
+              </ul> -->
+            </div>
+          </nav>
+          <div class="d-flex gap-4">
+            <a href="#"><span class="material-symbols-outlined text-dark link-success">search</span></a>
+            <a href="#"><span class="material-symbols-outlined text-dark link-success">notifications_active</span></a>
+          </div>
+        </header>
+        <section>
+          <div class="d-flex justify-content-between align-items-end">
+            <div class="dropdown">
+              <button class="btn border-0 fw-bold text-dark link-success" data-bs-toggle="dropdown" aria-expanded="false">
+                All (4)<span class="material-symbols-outlined text-success ms-2">keyboard_arrow_down</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex gap-3 flex-wrap flex-lg-nowrap">
+            <!-- list-group  -->
+            <div class="list-group" id="list-tab" role="tablist">
+              <!-- list group 1 -->
+              <a class="list-group-item list-group-item-action active btn-outline-light" id="list-1-list"
+                data-bs-toggle="list" href="#list-1" role="tab" aria-controls="list-1">
+                <div class="d-flex w-100 justify-content-between align-items-center fs-8 mb-1">
+                  <p>Chapter Assignment 2</p>
+                  <small>4 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <p class="fs-6 fw-bold">Please check this file…</p>
+                  <small class="fs-8 text-secondary">Emily Wang</small>
+                </div>
+              </a>
+              <!-- list group 2 -->
+              <a class="list-group-item list-group-item-action" id="list-2-list" data-bs-toggle="list" href="#list-2"
+                role="tab" aria-controls="list-2">
+                <div class="d-flex w-100 justify-content-between align-items-center fs-8 mb-1">
+                  <p>Chapter Assignment 1</p>
+                  <small>12 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <p class="fs-6 fw-bold">My Homework</p>
+                  <small class="fs-8 text-secondary">David Xu</small>
+                </div>
+              </a>
+              <!-- list group 3 -->
+              <a class="list-group-item list-group-item-action" id="list-3-list" data-bs-toggle="list" href="#list-3"
+                role="tab" aria-controls="list-3">
+                <div class="d-flex w-100 justify-content-between align-items-center fs-8 mb-1">
+                  <p>Final Assignment</p>
+                  <small>18 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <p class="fs-6 fw-bold">Have a problem with this…</p>
+                  <small class="fs-8 text-secondary">Tony Wei</small>
+                </div>
+              </a>
+              <!-- list group 4 -->
+              <a class="list-group-item list-group-item-action" id="list-3-list" data-bs-toggle="list" href="#list-4"
+                role="tab" aria-controls="list-4">
+                <div class="d-flex w-100 justify-content-between align-items-center fs-8 mb-1">
+                  <p>Final Assignment</p>
+                  <small>19 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                  <p class="fs-6 fw-bold">Did I do it right?</p>
+                  <small class="fs-8 text-secondary">Christina Lin</small>
+                </div>
+              </a>
+            </div>
+            <!-- tab-content -->
+            <div class="tab-content flex-fill" id="nav-tabContent">
+              <div class="tab-pane fade show active position-relative" id="list-1" role="tabpanel"
+                aria-labelledby="list-1-list">
+                <!-- tab-content 的 card -->
+                <span class="fs-8 text-secondary mb-2 position-absolute bottom-100 end-0">2 comments</span>
+                <div class="card">
+                  <div class="card-header d-flex align-items-center justify-content-between">
+                    <div>
+                      <p class="fs-8">Chapter Assignment 2 / HTML&CSS</p>
+                      <p class="fw-bold">Please check this file for me, thanks!</p>
+                    </div>
+                    <div class="dropstart">
+                      <button type="button" class="btn border-0 text-dark link-success" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="material-symbols-outlined">more_vert</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex align-items-start">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-circle object-fit-cover" src="../assets/images/emilywang.jpeg"
+                          alt="Andy Chen image" width="40px" height="40px">
+                      </div>
+                      <div class="flex-grow-1 ms-3 border-bottom pb-3 mb-3">
+                        <p class="fw-bold">Emily Wang</p>
+                        <time datetime="10:38">10:38 AM (4 hours ago)</time>
+                        <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                          the following code the height of the <code>div</code> is bigger than the height of the
+                          <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a
+                          padding/margin.<br>
+                          What is the gap or extra space below image?
+                        </p>
+                        <a class="btn btn-light border" href="HW-2-David.zip" download><span
+                            class="material-symbols-outlined">attach_file</span>HW-2-David.zip</a>
+                      </div>
+                    </div>
+                    <div class="collapseReplyGroup collapse show" id="collapseReply1">
+                      <div class="d-flex align-items-start">
+                        <div class="flex-shrink-0">
+                          <img class="rounded-circle object-fit-cover" src="../assets/images/andychen.jpeg"
+                            alt="Andy Chen image" width="40px" height="40px">
+                        </div>
+                        <div class="flex-grow-1 ms-3 pb-3">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                              <p class="fw-bold">Andy Chen</p>
+                              <time datetime="10:38">10:38 AM (4 hours ago)</time>
+                            </div>
+                            <div class="d-flex gap-4">
+                              <a href="#"><span
+                                  class="material-symbols-outlined icon-unfilled text-dark link-success">star</span></a>
+                              <a href="#"><span class="material-symbols-outlined text-dark link-success">edit</span></a>
+                            </div>
+                          </div>
+                          <div>
+                            <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                              line that a, b, c and d sit on. There is space below that line for the descenders you find
+                              on letters like g, j, p and q.<br><br>
+                              You can:
+                            </p>
+                            <br>
+                            <ul>
+                              <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                                <code>middle</code> ) or
+                              </li>
+                              <li>change the <code>display</code> so it isn’t inline.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- mark as read button  -->
+                <div class="collapseReplyGroup collapse show">
+                  <div class="d-flex align-items-center justify-content-between mt-3 w-100">
+                    <div class="d-flex gap-4">
+                      <a href="#"><span class="material-symbols-outlined text-dark link-success">chevron_left</span></a>
+                      <a href="#"><span class="material-symbols-outlined text-dark link-success">chevron_right</span></a>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <button type="button" class="btn btn-outline-success py-2 px-8">Mark as
+                        read</button>
+                      <button type="button" class="btn btn-success py-2 px-8" data-bs-toggle="collapse"
+                        data-bs-target=".collapseReplyGroup" aria-expanded="false"
+                        aria-controls="collapseReply1 collapseReply2">Reply</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- reply window -->
+                <div class="collapseReplyGroup collapse" id="collapseReply2">
+                  <div class="card border-top-0 rounded-0">
+                    <div class="card-header d-flex align-items-center flex-wrap">
+                      <div class="dropdown">
+                        <button class="btn btn-light border-0 me-4" type="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Body Text<span class="material-symbols-outlined ms-2">arrow_drop_down</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <div class="d-flex">
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">format_bold</span></a>
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">format_list_bulleted</span></a>
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">format_list_numbered</span></a>
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">image</span></a>
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">link</span></a>
+                        <a href="#" class="btn btn-light border-0 btn-sm"><span
+                            class="material-symbols-outlined">code</span></a>
+                      </div>
+                    </div>
+                    <div class="card-body position-relative p-0" style="height: 263px;">
+                      <textarea class="w-100 h-100 py-3 px-4 border-0 focus-ring" name="replyText" id="replyText"
+                        placeholder="Reply an answer…"></textarea>
+                      <div class="text-end position-absolute bottom-0 end-0 pe-4 pb-3">
+                        <button type="button" class="btn btn-outline-success py-2 px-8 me-2" data-bs-toggle="collapse"
+                          data-bs-target=".collapseReplyGroup" aria-expanded="false"
+                          aria-controls="collapseReply1 collapseReply2">Cancel</button>
+                        <button type="button" class="btn btn-success py-2 px-8" data-bs-toggle="collapse"
+                          data-bs-target="#" aria-expanded="false" aria-controls="">Reply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-2" role="tabpanel" aria-labelledby="list-2-list">2</div>
+              <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-3-list">3</div>
+              <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-4-list">4</div>
+            </div>
+          </div>
+        </section>
+      </main>
+  </div>
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>
