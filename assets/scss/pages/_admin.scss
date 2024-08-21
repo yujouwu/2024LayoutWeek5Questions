@@ -25,3 +25,6 @@
 .collapsed .close{
   display: inline-block;
 }
+.stretched-link::after{
+  right: 73px;
+}
